@@ -1,0 +1,54 @@
+body {
+  min-height: 1000px;
+}
+/* navbar */
+@font-face {
+  font-family: Monserrat;
+  src: url(../font/Montserrat-VariableFont_wght.ttf);
+}
+.navbar-brand {
+  font-family: Monserrat;
+  font-size: 36px;
+  font-weight: bold;
+}
+/* utility */
+.tombol {
+  text-transform: uppercase;
+  border-radius: 40px;
+}
+/* jumbotron */
+.jumbotron {
+  background-image: url(../landing-page/img/beach.jpg);
+  background-size: cover;
+  height: 640px;
+}
+.jumbotron .display-4 {
+  color: white;
+  padding-top: 250px;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+  font-size: 62px;
+}
+/* dekstop */
+@media (min-width: 992px) {
+  .navbar-brand,
+  .nav-link {
+    color: white;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+  }
+  .nav-link {
+    text-transform: uppercase;
+    margin-right: 30px;
+  }
+  .nav-link:hover::after {
+    content: "";
+    display: block;
+    border-bottom: 3px solid rgb(0, 0, 255);
+    margin: auto;
+    width: 50%;
+    padding-bottom: 5px;
+    margin-bottom: -8px;
+  }
+  .jumbotron {
+    margin-top: -90px;
+  }
+}
