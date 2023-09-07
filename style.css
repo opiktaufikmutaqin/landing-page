@@ -1,6 +1,3 @@
-body {
-  min-height: 2000px;
-}
 /* navbar */
 @font-face {
   font-family: Monserrat;
@@ -21,7 +18,12 @@ body {
   background-image: url(../landing-page/img/beach.jpg);
   background-size: cover;
   height: 640px;
-  position: relative;
+}
+.jumbotron::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 .jumbotron .display-4 {
   color: white;
@@ -29,19 +31,11 @@ body {
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
   font-size: 35px;
 }
-.jumbotron::after {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 100%;
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0));
-  position: absolute;
-  bottom: 0;
-}
+/* 
 .jumbotron .container {
   position: relative;
   z-index: 1;
-}
+} */
 /* info panel */
 .info-panel img {
   width: 70px;
@@ -61,7 +55,7 @@ body {
 }
 /* workingspace */
 .workingspace {
-  margin-top: 150px;
+  margin-top: 100px;
   text-align: center;
 }
 .workingspace p {
@@ -70,8 +64,20 @@ body {
 .workingspace h3 {
   font-size: 55px;
 }
-.workingspace img {
+.testimonial {
+  margin-top: 120px;
 }
+.testimonial figure img {
+  width: 60px;
+  opacity: 0.6;
+  margin: 20px 15px 10px;
+}
+.testimonial figure img.utama {
+  width: 90px;
+  opacity: 1;
+  margin-top: 10px;
+}
+
 /* dekstop */
 @media (min-width: 992px) {
   .navbar-brand,
@@ -100,6 +106,6 @@ body {
   }
   .workingspace {
     text-align: left;
-    margin-top: 150px;
+    margin-top: 100px;
   }
 }
