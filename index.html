@@ -9,7 +9,7 @@
   </head>
   <body>
     <!-- navabar -->
-    <nav class="navbar navbar-expand-lg text-light">
+    <nav class="navbar navbar-expand-lg text-light z-2 position-relative">
       <div class="container">
         <a class="navbar-brand" href="#">SangkaRa</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -26,18 +26,53 @@
       </div>
     </nav>
     <!-- jumbotron -->
-    <div class="jumbotron jumbotron-fluid">
+    <section class="jumbotron jumbotron-fluid">
       <div class="container text-center">
         <h1 class="display-4"><span class="fw-bold">Explore</span> the <span class="fw-bold">World</span> with <span class="fw-bold">Us</span></h1>
-        <button type="button" class="btn btn-outline-light rounded-pill fw-bold border border-3 shadow-sm">Let's Go</button>
+        <button type="button" class="btn btn-light btn-lg rounded-5 fw-bold shadow-sm">Let's Go</button>
       </div>
-    </div>
+    </section>
     <!-- panel -->
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-lg-10 info-panel"></div>
+    <section>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-8 info-panel rounded-2 z-1 position-absolute shadow p-3">
+            <div class="row">
+              <div class="col-lg">
+                <img src="../landing-page/img/icon/1.png" alt="Destination" class="float-start m-2" />
+                <h4 class="text-uppercase mt-1 fw-bold">More Choice</h4>
+                <p class="fw-medium">Lorem ipsum dolor sit amet.</p>
+              </div>
+              <div class="col-lg">
+                <img src="../landing-page/img/icon/2.png" alt="Chat" class="float-start m-2" />
+                <h4 class="text-uppercase mt-1 fw-bold">Live Chat</h4>
+                <p class="fw-medium">Lorem ipsum dolor sit amet.</p>
+              </div>
+              <div class="col-lg">
+                <img src="../landing-page/img/icon/3.png" alt="Security" class="float-start m-2" />
+                <h4 class="text-uppercase mt-1 fw-bold">Trusted</h4>
+                <p class="fw-medium">Lorem ipsum dolor sit amet.</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
+    </section>
+      <!-- workingspace -->
+      <section>
+        <div class="container">
+          <div class="row workingspace z-2 position-absolute">
+            <div class="col-6">
+              <img src="img/workingspace.jpg" alt="workingspace" class="img-fluid rounded-3 " />
+            </div>
+            <div class="col-5 ms-3 mt-5 ">
+              <h3 class="text-uppercase fw-light">More <span class="text-primary fw-bold">Travel</span class="text-primary fw-bold"> More <span class="text-primary fw-bold">Happier</span class="text-primary fw-bold"></h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt placeat inventore similique tenetur corrupti libero?</p>
+              <a href="" class="btn btn-primary">Gallery</a>
+            </div>
+          </div>
+        </div>
+      </section>
     <script src="../bootstrap/5.3.1/js/code.jquery.com_jquery-3.7.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
   </body>
